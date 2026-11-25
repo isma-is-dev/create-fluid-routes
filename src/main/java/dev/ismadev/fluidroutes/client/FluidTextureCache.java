@@ -95,8 +95,8 @@ public final class FluidTextureCache {
         }
         warnedCap = false;
 
-        int main = ABGR32.color(255, routeColor(theme));
-        int halo = ABGR32.color(170, 6, 16, 28);
+        int main = abgr(255, routeColor(theme));
+        int halo = abgr(170, 0x06101C);
 
         if (showRoutes) {
             for (FluidEdge edge : data.edges) {
@@ -108,11 +108,11 @@ public final class FluidTextureCache {
         }
 
         if (showNodes) {
-            int outline = ABGR32.color(180, 6, 16, 28);
+            int outline = abgr(180, 0x06101C);
             for (FluidNode node : data.nodes) {
                 int x = Mth.floor(node.x() / factor);
                 int z = Mth.floor(node.z() / factor);
-                int color = ABGR32.color(255, nodeColor(node.kind()));
+                int color = abgr(255, nodeColor(node.kind()));
                 setPixel(x - 1, z - 1, outline);
                 setPixel(x + 2, z - 1, outline);
                 setPixel(x - 1, z + 2, outline);
@@ -223,6 +223,10 @@ public final class FluidTextureCache {
         });
     }
 
+    /** Packs an 0xRRGGBB colour plus alpha into the ABGR layout NativeImage expects. */
+    private static int abgr(int alpha, int rgb) {
+        return ABGR32.fromArgb32((alpha << 24) | (rgb & 0xFFFFFF));
+    }
     private static int routeColor(FluidConfig.LineTheme theme) {
         return switch (theme) {
             case CYAN -> 0x35D0FF;

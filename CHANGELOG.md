@@ -3,6 +3,13 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), versioning: SemVer.
 
+## [1.0.1] - 2026-11-25
+
+### Fixed
+
+- Pipes rendered orange instead of blue: map colours were packed as RGB into an ABGR
+  buffer, which swaps red and blue. Colours now convert explicitly, so pipes are postal
+  blue and the tank/pump/spout markers keep their intended hues.
 ## [1.0.0] - 2026-11-25
 
 ### Added
