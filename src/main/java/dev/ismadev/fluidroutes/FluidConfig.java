@@ -74,7 +74,7 @@ public final class FluidConfig {
     }
 
     public static int widgetY() {
-        return Math.max(0, safe(CLIENT.widgetY, 80));
+        return Math.max(0, safe(CLIENT.widgetY, 96));
     }
 
     public static int syncIntervalTicks() {
@@ -133,8 +133,8 @@ public final class FluidConfig {
 
             this.widgetY = builder
                 .comment("Vertical position of the Fluid button on the map, in GUI pixels.",
-                    "Postal Routes uses 48 and Stress Routes 64, so 80 keeps the three stacked.")
-                .defineInRange("widgetY", 80, 0, 400);
+                    "Postal uses 48, Stress 64 and its heat button 80, so 96 keeps the column clear.")
+                .defineInRange("widgetY", 96, 0, 400);
 
             builder.pop();
         }

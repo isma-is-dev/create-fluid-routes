@@ -3,6 +3,14 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), versioning: SemVer.
 
+## [1.0.2] - 2026-11-25
+
+### Fixed
+
+- Button clicks now use raw mouse input, so the toggle works even when part of the button
+  overlaps the map area.
+- Wider button: the label and the pump count are no longer cramped.
+- Default button position moved to y=96 so it sits below the stress heat button.
 ## [1.0.1] - 2026-11-25
 
 ### Fixed

@@ -17,7 +17,7 @@ import java.util.List;
 public final class FluidMapWidget {
 
     public static final int X = 3;
-    public static final int WIDTH = 58;
+    public static final int WIDTH = 66;
     public static final int HEIGHT = 14;
 
     private static final int BACKGROUND_ON = 0xE0081420;
