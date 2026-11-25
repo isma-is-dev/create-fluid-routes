@@ -1,0 +1,16 @@
+{
+  "fluidroutes.widget.label": "Fluid",
+  "fluidroutes.widget.title": "Create: Fluid Routes",
+  "fluidroutes.widget.on": "Overlay enabled",
+  "fluidroutes.widget.off": "Overlay disabled",
+  "fluidroutes.widget.hint": "Click to toggle",
+
+  "fluidroutes.node.pump": "Mechanical pump",
+  "fluidroutes.node.tank": "Fluid tank",
+  "fluidroutes.node.spout": "Spout",
+  "fluidroutes.node.pipe": "Fluid pipe",
+
+  "fluidroutes.command.stats.header": "Fluid Routes — %s tracked fluid blocks, %s map viewer(s)",
+  "fluidroutes.command.stats.dimension": "%s: %s blocks, %s pipe links, %s nodes, %s pump(s)",
+  "fluidroutes.command.rescan": "Fluid Routes rescanned %s loaded chunks"
+}

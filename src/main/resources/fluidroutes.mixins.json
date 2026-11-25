@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.ismadev.fluidroutes.mixin",
+  "plugin": "dev.ismadev.fluidroutes.mixin.FluidMixinPlugin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "GuiMapAccessor",
+    "GuiMapMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

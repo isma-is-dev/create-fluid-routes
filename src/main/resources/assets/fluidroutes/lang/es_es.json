@@ -1,0 +1,16 @@
+{
+  "fluidroutes.widget.label": "Fluidos",
+  "fluidroutes.widget.title": "Create: Rutas de Fluidos",
+  "fluidroutes.widget.on": "Capa activada",
+  "fluidroutes.widget.off": "Capa desactivada",
+  "fluidroutes.widget.hint": "Clic para activar/desactivar",
+
+  "fluidroutes.node.pump": "Bomba mecánica",
+  "fluidroutes.node.tank": "Depósito de fluidos",
+  "fluidroutes.node.spout": "Surtidor",
+  "fluidroutes.node.pipe": "Tubería de fluidos",
+
+  "fluidroutes.command.stats.header": "Rutas de Fluidos — %s bloques de fluidos indexados, %s espectador(es) del mapa",
+  "fluidroutes.command.stats.dimension": "%s: %s bloques, %s enlaces de tubería, %s nodos, %s bomba(s)",
+  "fluidroutes.command.rescan": "Rutas de Fluidos reindexó %s chunks cargados"
+}
